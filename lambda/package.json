@@ -1,0 +1,28 @@
+{
+  "name": "overseer-grabber",
+  "version": "1.1.0",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf build",
+    "compile": "tsc --build tsconfig.json --pretty",
+    "build-final": "cpy package.json build && cd build/ && npm install --production",
+    "build": "npm run clean && npm run compile && npm run build-final"
+  },
+  "author": "Mark Buhagiar",
+  "dependencies": {
+    "ask-sdk-core": "^2.7.0",
+    "ask-sdk-model": "^1.19.0",
+    "aws-sdk": "^2.326.0",
+    "axios": "^1.7.9"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "ask-sdk-local-debug": "^1.1.0",
+    "cpy-cli": "^5.0.0",
+    "i": "^0.3.7",
+    "npm": "^11.0.0",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  }
+}

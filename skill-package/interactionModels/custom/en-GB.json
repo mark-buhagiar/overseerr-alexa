@@ -1,0 +1,39 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "media_name",
+              "type": "media_name"
+            }
+          ],
+          "name": "add_media",
+          "samples": ["to add {media_name}"]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "movie_or_tv"
+              }
+            }
+          ],
+          "name": "media_name"
+        }
+      ],
+      "invocationName": "episode manager"
+    }
+  }
+}
