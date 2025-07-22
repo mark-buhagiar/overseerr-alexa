@@ -13,7 +13,7 @@
     "ask-sdk-core": "^2.7.0",
     "ask-sdk-model": "^1.19.0",
     "aws-sdk": "^2.326.0",
-    "axios": "^1.7.9"
+    "axios": "^1.8.2"
   },
   "devDependencies": {
     "@types/node": "^22.10.5",
